@@ -1,0 +1,18 @@
+{
+  "name": "vue-school-test-utils-base",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/codebryo/vue-school-test-utils-base.git",
+  "author": "Roman Kuba <roman.kuba@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^24.5.0",
+    "jest": "^24.5.0",
+    "jest-serializer-vue": "^2.0.2",
+    "vue": "^2.6.9",
+    "vuex": "^3.1.1"
+  }
+}
