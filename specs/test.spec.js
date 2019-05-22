@@ -1,6 +1,18 @@
 import TestComponent from '@/test'
-import { mount } from '@vue/test-utils'
+import List from '@/list'
 
-test('first-spec', () => {
-  console.log(TestComponent)
+import { mount, shallowMount } from '@vue/test-utils'
+
+test('mount a vue component', () => {
+  const wrapper = mount(TestComponent, {
+    propsData: {
+      value: 'VueSchool'
+    }
+  })
+  expect(wrapper.html()).toMatchSnapshot()
+})
+
+test('ListComponent Shallow', () => {
+  console.log(mount(List).html())
+  console.log(shallowMount(List).html())
 })
