@@ -11,7 +11,7 @@
 </template>
 
 <script>
-  import ListItem from './components/item'
+  import ListItem from './components/list-item'
 
   export default {
 
