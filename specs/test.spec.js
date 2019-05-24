@@ -1,7 +1,7 @@
 import TestComponent from '@/test'
 import List from '@/list'
 
-import { mount, shallowMount } from '@vue/test-utils'
+import { mount } from '@vue/test-utils'
 
 test('mount a vue component', () => {
   const wrapper = mount(TestComponent, {
@@ -9,10 +9,12 @@ test('mount a vue component', () => {
       value: 'VueSchool'
     }
   })
-  expect(wrapper.html()).toMatchSnapshot()
+  expect(wrapper).toMatchSnapshot()
 })
 
-test('ListComponent Shallow', () => {
-  console.log(mount(List).html())
-  console.log(shallowMount(List).html())
+test('ListComponent', () => {
+  const wrapper = mount(List)
+  const movies = wrapper.vm.marvelMovies
+  wrapper.setData({ marvelMovies: [...movies, 'Endgame' ]})
+  expect(wrapper).toMatchSnapshot()
 })
