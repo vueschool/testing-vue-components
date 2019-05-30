@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shallowMount 1`] = `
+<div>
+  <ul>
+    <li>Iron Man</li>
+    <li>Avengers</li>
+    <li>Infitinity War</li>
+  </ul>
+</div>
+`;
