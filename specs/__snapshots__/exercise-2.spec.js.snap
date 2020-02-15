@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`follow the user through the form 1`] = `
+<div>
+  <form><input type="text" placeholder="Add a task"> <button type="submit">Add</button></form>
+  <h2>Tasks</h2>
+  <ul></ul>
+</div>
+`;
+
+exports[`follow the user through the form 2`] = `
+<div>
+  <form><input type="text" placeholder="Add a task"> <button type="submit">Add</button></form>
+  <h2>Tasks</h2>
+  <ul>
+    <li>
+      my todo
+      <button>Done</button></li>
+  </ul>
+</div>
+`;
+
+exports[`follow the user through the form 3`] = `
+<div>
+  <form><input type="text" placeholder="Add a task"> <button type="submit">Add</button></form>
+  <h2>Tasks</h2>
+  <ul></ul>
+</div>
+`;
