@@ -7,8 +7,9 @@ module.exports = {
   },
   transform: {
     "^.+\\.js$": "babel-jest",
+    "^.+\\.vue$": "vue-jest"//tell Jest that every file ending in .vue should run thru vue-jest
   },
   snapshotSerializers: [
     "<rootDir>/node_modules/jest-serializer-vue"
   ]
-}
+};

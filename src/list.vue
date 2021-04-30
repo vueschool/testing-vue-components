@@ -24,10 +24,10 @@
         marvelMovies: [
           'Iron Man',
           'Avengers',
-          'Infitinity War',
+          'Infinity War',
         ]
       }
-    }
+    }//end data()
 
   }
 </script>
